@@ -1,5 +1,5 @@
 # Layer 0. Download base ruby image.
-FROM ruby:2.6.3-slim
+FROM ruby:2.7.4-slim
 
 # Layer 1. Updating and installing the necessary software for the Web server. Cleansing to reduce image size.
 RUN apt-get update -qq && apt-get install --no-install-recommends -y \
