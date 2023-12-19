@@ -17,4 +17,8 @@
 #   runner "AnotherModel.prune_old_records"
 # end
 
+every 1.minute do
+  rake 'sample:test'
+end
+
 # Learn more: http://github.com/javan/whenever
