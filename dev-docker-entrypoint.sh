@@ -11,4 +11,6 @@ bundle exec rake db:create
 bundle exec rake db:migrate
 bundle exec rake db:seed
 
-exec "$@"
+bundle exec sidekiq & \
+bundle exec puma -C config/puma.rb
+#exec "$@"
